@@ -22,3 +22,52 @@ a {
 .iconify:hover {
   color: #979797 !important;
 }
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #4b5563;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 15px;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #4b5563;
+  top: 26px;
+  left: 50%;
+  margin-left: -10px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .timeline::after {
+    background-color: none;
+    width: 0;
+  }
+  .timeline-container::after {
+    background-color: none;
+    width: 0;
+    height: 0;
+  }
+
+}

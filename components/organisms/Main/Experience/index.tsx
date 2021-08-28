@@ -13,9 +13,13 @@ import IconList from "components/molecules/IconList";
 const Experience = () => {
   return (
     <Section id="experience" title="Experience" bg="dark">
-      {experiences.map((exp, index) => (
-        <Information {...exp} key={index} />
-      ))}
+      <div className="timeline">
+        {experiences.map((exp, index) => (
+          <div className="timeline-container">
+            <Information {...exp} key={index} />
+          </div>
+        ))}
+      </div>
     </Section>
   );
 };
@@ -94,10 +98,14 @@ const experiences = [
         </ul>
         <Row>
           <Col xs={12} md={6}>
-            <Image src={tyapn1} alt="TYAPN Officers" />
+            <Image src={tyapn1} alt="TYAPN Officers" priority={true} />
           </Col>
           <Col xs={12} md={6}>
-            <Image src={tyapn2} alt="TYAPN's Event - Legend of the Swoosh" />
+            <Image
+              src={tyapn2}
+              alt="TYAPN's Event - Legend of the Swoosh"
+              priority={true}
+            />
           </Col>
         </Row>
       </>
@@ -143,10 +151,20 @@ const experiences = [
         </div>
         <Row>
           <Col xs={12} md={6}>
-            <Image src={make1} className="project-pic" alt="Make A Thing" />
+            <Image
+              src={make1}
+              className="project-pic"
+              alt="Make A Thing"
+              priority={true}
+            />
           </Col>
           <Col xs={12} md={6}>
-            <Image src={make2} className="project-pic" alt="Make A Thing" />
+            <Image
+              src={make2}
+              className="project-pic"
+              alt="Make A Thing"
+              priority={true}
+            />
           </Col>
         </Row>
       </>
