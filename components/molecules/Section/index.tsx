@@ -16,7 +16,7 @@ const Section = ({ id, children, className, bg, title }: IProps) => {
       className={`p-5 ${className}`}
       style={{ backgroundColor: BG[bg] }}
     >
-      <Container>
+      <Container className="pt-5">
         {title && <h2 className="display-4 mb-5 text-center">{title}</h2>}
         {children}
       </Container>
