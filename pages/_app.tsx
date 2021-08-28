@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { TITLE } from "../constants";
 import type { AppProps } from "next/app";
-import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
