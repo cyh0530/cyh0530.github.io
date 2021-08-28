@@ -3,12 +3,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Information from "../../../molecules/Information";
 import Section from "../../../molecules/Section";
-import { ICON_COLORS } from "@constants/index";
+import { ICONS } from "@constants/index";
 import make1 from "@images/experiences/make-1.png";
 import make2 from "@images/experiences/make-2.png";
 import tyapn1 from "@images/experiences/tyapn-1.jpg";
 import tyapn2 from "@images/experiences/tyapn-2.jpg";
 import IconList from "components/molecules/IconList";
+
 const Experience = () => {
   return (
     <Section id="experience" title="Experience" bg="dark">
@@ -49,56 +50,16 @@ const experiences = [
         <div className="d-flex align-item-center ml-5 mb-4">
           <IconList
             icons={[
-              {
-                icon: "fa-brands:html5",
-                title: "HTML5",
-                color: ICON_COLORS.HTML5,
-              },
-              {
-                icon: "fa-brands:css3",
-                title: "CSS 3",
-                color: ICON_COLORS.CSS3,
-              },
-              {
-                icon: "vscode-icons:file-type-js-official",
-                title: "Javascript",
-                color: ICON_COLORS.JS,
-              },
-              {
-                icon: "fa-brands:react",
-                title: "React",
-                color: ICON_COLORS.REACT,
-              },
-              {
-                icon: "fa-brands:node",
-                title: "Node",
-                color: ICON_COLORS.NODE,
-              },
-              {
-                icon: "fa-brands:yarn",
-                title: "Yarn",
-                color: ICON_COLORS.YARN,
-              },
-              {
-                icon: "file-icons:nginx",
-                title: "Nginx",
-                color: ICON_COLORS.NGINX,
-              },
-              {
-                icon: "cib:postgresql",
-                title: "PostgreSQL",
-                color: ICON_COLORS.POSTGRE,
-              },
-              {
-                icon: "vscode-icons:file-type-mongo",
-                title: "MongoDB",
-                color: ICON_COLORS.MONGO,
-              },
-              {
-                icon: "codicon:azure",
-                title: "Azure",
-                color: ICON_COLORS.AZURE,
-              },
+              ICONS.HTML5,
+              ICONS.SASS,
+              ICONS.TS,
+              ICONS.REACT,
+              ICONS.NODE,
+              ICONS.YARN,
+              ICONS.NGINX,
+              ICONS.POSTGRE,
+              ICONS.MONGO,
+              ICONS.AZURE,
             ]}
           />
         </div>
@@ -171,36 +132,12 @@ const experiences = [
         <div className="d-flex align-item-center ml-5 mb-4">
           <IconList
             icons={[
-              {
-                icon: "fa-brands:html5",
-                title: "HTML5",
-                color: ICON_COLORS.HTML5,
-              },
-              {
-                icon: "fa-brands:css3",
-                title: "CSS 3",
-                color: ICON_COLORS.CSS3,
-              },
-              {
-                icon: "vscode-icons:file-type-js-official",
-                title: "Javascript",
-                color: ICON_COLORS.JS,
-              },
-              {
-                icon: "fa-brands:react",
-                title: "React",
-                color: ICON_COLORS.REACT,
-              },
-              {
-                icon: "fa-brands:node",
-                title: "Node",
-                color: ICON_COLORS.NODE,
-              },
-              {
-                icon: "whh:mysqltwo",
-                title: "MySQL",
-                color: ICON_COLORS.MYSQL,
-              },
+              ICONS.HTML5,
+              ICONS.CSS3,
+              ICONS.JS,
+              ICONS.REACT,
+              ICONS.NODE,
+              ICONS.MYSQL,
             ]}
           />
         </div>

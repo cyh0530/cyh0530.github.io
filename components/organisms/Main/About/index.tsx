@@ -5,48 +5,36 @@ import Col from "react-bootstrap/Col";
 import Image from "next/image";
 import head from "../../../../static/images/head.jpg";
 import { Icon } from "@iconify/react";
-import Section from '../../../molecules/Section'
-import { SITE_DESC, ICON_COLORS } from "@constants/index";
-const About = () => {
+import Section from "../../../molecules/Section";
+import { SITE_DESC, ICONS } from "@constants/index";
 
-  const avatarSize = useMemo(() => (300), [])
+const About = () => {
+  const avatarSize = useMemo(() => 300, []);
   const socialMedia = useMemo(
     () => [
       {
-        icon: "fa-solid:id-card",
-        title: "Resume",
+        ...ICONS.ID_CARD,
         link: "",
-        color: "#4b2e83",
       },
       {
-        icon: "cib:gmail",
-        title: "Email",
+        ...ICONS.GMAIL,
         link: "mailto:cyh0530@uw.edu",
-        color: "#bb001b",
       },
       {
-        icon: "akar-icons:linkedin-fill",
-        title: "LinkedIn",
+        ...ICONS.LINKEDIN,
         link: "https://www.linkedin.com/in/cyh0530/",
-        color: ICON_COLORS.LINKEDIN,
       },
       {
-        icon: "fa-brands:github",
-        title: "Github",
+        ...ICONS.GITHUB,
         link: "https://github.com/cyh0530",
-        color: ICON_COLORS.GITHUB,
       },
       {
-        icon: "fa-brands:facebook",
-        title: "Facebook",
+        ...ICONS.FACEBOOK,
         link: "https://www.facebook.com/cyh0530/",
-        color: ICON_COLORS.FACEBOOK,
       },
       {
-        icon: "fa-brands:instagram",
-        title: "Instagram",
+        ...ICONS.INSTAGRAM,
         link: "https://www.instagram.com/cyh0530/",
-        color: ICON_COLORS.INSTAGRAM,
       },
     ],
     []
@@ -77,7 +65,7 @@ const About = () => {
                   <a
                     href={social.link}
                     key={index}
-                    title={social.title}
+                    title={social.name}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-dark"
