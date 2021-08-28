@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Information from "../../../molecules/Information";
 import Section from "../../../molecules/Section";
-import { ICONS } from "@constants/index";
+import ICONS from "@constants/icons";
 import make1 from "@images/experiences/make-1.png";
 import make2 from "@images/experiences/make-2.png";
 import tyapn1 from "@images/experiences/tyapn-1.jpg";

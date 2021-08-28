@@ -2,7 +2,7 @@ import Section from "@components/molecules/Section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProjectCard from "./ProjectCard";
-import { ICONS } from "@constants/index";
+import ICONS from "@constants/icons";
 
 const Project = () => {
   return (

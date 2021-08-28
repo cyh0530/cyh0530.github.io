@@ -2,7 +2,7 @@ import IconList from "@components/molecules/IconList";
 import { ReactNode } from "react";
 import Card from "react-bootstrap/Card";
 import { Icon } from "@iconify/react";
-import { ICONS } from "@constants/index";
+import ICONS from "@constants/icons";
 
 interface IProps {
   title: string;
