@@ -30,6 +30,17 @@ const Footer = () => {
             </a>
           ))}
         </p>
+        <p>
+          Special thanks to
+          <a
+            href="https://github.com/hashirshoaeb/home"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hashirshoaeb
+          </a>
+          for template referencing
+        </p>
       </div>
     </Section>
   );
