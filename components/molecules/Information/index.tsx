@@ -28,7 +28,7 @@ const Information = ({
 }: IProps) => {
 
   return (
-    <Row className="py-5">
+    <Row className="py-4">
       <Col xs={12} md={6} className="mb-4" data-aos="fade-right">
         <Row className="align-items-center">
           <Col className="text-md-end text-start">
