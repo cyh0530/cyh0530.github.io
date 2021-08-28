@@ -32,7 +32,7 @@ const Information = ({
       <Col xs={12} md={6} className="mb-4" data-aos="fade-right">
         <Row className="align-items-center">
           <Col className="text-md-end text-start">
-            <h5 className="font-weight-bold">{name}</h5>
+            <h4 className="font-weight-bold">{name}</h4>
             <h6>
               {startDate} - {endDate}
             </h6>
@@ -51,7 +51,7 @@ const Information = ({
         </Row>
       </Col>
       <Col xs={12} md={6} data-aos="fade-left" className="">
-        <h5 className="font-weight-bold">{title}</h5>
+        <h4 className="font-weight-bold">{title}</h4>
         <p>{description}</p>
       </Col>
     </Row>
