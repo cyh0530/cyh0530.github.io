@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.iconify {
+  transition: all 0.5s;
+}
+
+.iconify:hover {
+  color: #979797 !important;
+}
