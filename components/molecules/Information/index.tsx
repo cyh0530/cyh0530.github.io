@@ -38,9 +38,10 @@ const Information = ({
             </h6>
             <h6>{location}</h6>
           </Col>
-          <Col xs={3}>
+          <Col xs={2}>
             {logo && (
               <Image
+              priority={true}
                 src={logo}
                 alt="UW"
                 width={logoWidth}
@@ -50,8 +51,8 @@ const Information = ({
           </Col>
         </Row>
       </Col>
-      <Col xs={12} md={6} data-aos="fade-left" className="">
-        <h4 className="font-weight-bold">{title}</h4>
+      <Col xs={12} md={6} className="ps-4">
+        <h5 className="font-weight-bold">{title}</h5>
         <p>{description}</p>
       </Col>
     </Row>

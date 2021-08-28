@@ -1,20 +1,9 @@
-import { useEffect } from "react";
-// import SmoothScroll from "smooth-scroll";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from 'react-bootstrap/Container'
 import { LINKS } from "../../../constants";
 
 const Header = () => {
-  useEffect(() => {
-    // new SmoothScroll('a[href*="#"]', {
-    //   speed: 2500,
-    //   speedAsDuration: true,
-    //   easing: "easeInOutCubic",
-    //   updateURL: false,
-    //   header: "#header",
-    // });
-  }, []);
 
   return (
     <Navbar

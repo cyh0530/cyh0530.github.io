@@ -25,7 +25,7 @@ const IconList = ({ icons, images = [] }: IProps) => {
         >
           <Icon
             height={32}
-            className="mx-2"
+            className="mx-2 mb-2"
             icon={icon.icon}
             color={icon.color}
           />
@@ -38,7 +38,7 @@ const IconList = ({ icons, images = [] }: IProps) => {
           delay={{ show: 250, hide: 250 }}
           overlay={(props) => renderTooltip(props, image.name)}
         >
-          <img className="mx-2" src={image.src} alt={image.name} height={32} />
+          <img className="mx-2 mb-2" src={image.src} alt={image.name} height={32} />
         </OverlayTrigger>
       ))}
     </div>

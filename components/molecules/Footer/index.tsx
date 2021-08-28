@@ -31,14 +31,15 @@ const Footer = () => {
           ))}
         </p>
         <p>
-          Special thanks to
+          Special thanks to{" "}
           <a
+            style={{ color: "#0d6efd" }}
             href="https://github.com/hashirshoaeb/home"
             target="_blank"
             rel="noopener noreferrer"
           >
             hashirshoaeb
-          </a>
+          </a>{" "}
           for template referencing
         </p>
       </div>

@@ -9,14 +9,14 @@ interface IProps {
   title?: string;
 }
 
-const Section = ({ id, children, className, bg, title }: IProps) => {
+const Section = ({ id, children, className = "", bg, title }: IProps) => {
   return (
     <div
       id={id}
-      className={`p-5 ${className}`}
+      className={`py-5 ${className}`}
       style={{ backgroundColor: BG[bg] }}
     >
-      <Container className="pt-5">
+      <Container className="pt-5 px-4" fluid="md">
         {title && <h2 className="display-4 mb-4 text-center">{title}</h2>}
         {children}
       </Container>

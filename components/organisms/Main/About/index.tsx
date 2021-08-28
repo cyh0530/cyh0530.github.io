@@ -19,6 +19,7 @@ const About = () => {
           className="d-none d-lg-flex align-self-center justify-content-center"
         >
           <Image
+            priority={true}
             src={head}
             alt="Chia-Yang Huang"
             className="border border-secondary rounded-circle"
