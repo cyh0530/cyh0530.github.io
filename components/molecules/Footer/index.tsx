@@ -7,7 +7,8 @@ const Footer = () => {
     <Section id="contact" bg="dark" title="Reach Out to Me!" className="pt-0">
       <div className="text-center">
         <p className="lead">
-          I'm currently looking for software engineering opportunities. <br />
+          I&apos;m currently looking for software engineering opportunities.{" "}
+          <br />
           Feel free to contact me if you have any position available
         </p>
         <p className="pt-2">
@@ -22,7 +23,6 @@ const Footer = () => {
             >
               <Icon
                 icon={social.icon}
-                // size="2x"
                 height={32}
                 className="mx-2"
                 color={social.color}

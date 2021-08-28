@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -8,7 +7,7 @@ interface IProps {
   startDate: string;
   endDate: string;
   location: string;
-  logo?: string | StaticImageData;
+  logo?: string;
   logoWidth?: number;
   logoHeight?: number;
   title: string;
@@ -40,8 +39,7 @@ const Information = ({
           </Col>
           <Col xs={2}>
             {logo && (
-              <Image
-              priority={true}
+              <img
                 src={logo}
                 alt="UW"
                 width={logoWidth}

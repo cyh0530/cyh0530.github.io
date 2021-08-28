@@ -1,13 +1,8 @@
-import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Information from "../../../molecules/Information";
 import Section from "../../../molecules/Section";
 import ICONS from "@constants/icons";
-import make1 from "@images/experiences/make-1.png";
-import make2 from "@images/experiences/make-2.png";
-import tyapn1 from "@images/experiences/tyapn-1.jpg";
-import tyapn2 from "@images/experiences/tyapn-2.jpg";
 import IconList from "components/molecules/IconList";
 
 const Experience = () => {
@@ -15,7 +10,7 @@ const Experience = () => {
     <Section id="experience" title="Experience" bg="dark">
       <div className="timeline">
         {experiences.map((exp, index) => (
-          <div className="timeline-container">
+          <div className="timeline-container" key={index}>
             <Information {...exp} key={index} />
           </div>
         ))}
@@ -31,7 +26,7 @@ const experiences = [
     endDate: "Aug 2021",
     location: "Taipei Taiwan",
     title: "Software Engineer",
-    logo: require("@images/logo/biilabs.svg"),
+    logo: "static/images/logo/biilabs.svg",
     logoWidth: 60,
     logoHeight: 60,
     description: (
@@ -75,7 +70,7 @@ const experiences = [
     startDate: "May 2019",
     endDate: "May 2020",
     location: "Seattle, WA",
-    logo: require("@images/logo/tyapn.png"),
+    logo: "static/images/logo/tyapn.png",
     logoWidth: 60,
     logoHeight: 60,
     title: "Director of Event Planning",
@@ -98,13 +93,17 @@ const experiences = [
         </ul>
         <Row>
           <Col xs={12} md={6}>
-            <Image src={tyapn1} alt="TYAPN Officers" priority={true} />
+            <img
+              src="static/images/experiences/tyapn-1.jpg"
+              alt="TYAPN Officers"
+              width="100%"
+            />
           </Col>
           <Col xs={12} md={6}>
-            <Image
-              src={tyapn2}
+            <img
+              src="static/images/experiences/tyapn-2.jpg"
               alt="TYAPN's Event - Legend of the Swoosh"
-              priority={true}
+              width="100%"
             />
           </Col>
         </Row>
@@ -116,7 +115,7 @@ const experiences = [
     startDate: "May 2019",
     endDate: "Jul 2019",
     location: "West Lafayette",
-    logo: require("@images/logo/make-a-thing.jpeg"),
+    logo: "static/images/logo/make-a-thing.jpeg",
     logoWidth: 60,
     logoHeight: 60,
     title: "Full Stack Web Developer",
@@ -151,19 +150,19 @@ const experiences = [
         </div>
         <Row>
           <Col xs={12} md={6}>
-            <Image
-              src={make1}
+            <img
+              src="static/images/experiences/make-1.png"
               className="project-pic"
               alt="Make A Thing"
-              priority={true}
+              width="100%"
             />
           </Col>
           <Col xs={12} md={6}>
-            <Image
-              src={make2}
+            <img
+              src="static/images/experiences/make-2.png"
               className="project-pic"
               alt="Make A Thing"
-              priority={true}
+              width="100%"
             />
           </Col>
         </Row>

@@ -1,8 +1,6 @@
 import { useMemo } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "next/image";
-import head from "../../../../static/images/head.jpg";
 import { Icon } from "@iconify/react";
 import Section from "../../../molecules/Section";
 import { SITE_DESC } from "@constants/index";
@@ -18,9 +16,8 @@ const About = () => {
           lg={5}
           className="d-none d-lg-flex align-self-center justify-content-center"
         >
-          <Image
-            priority={true}
-            src={head}
+          <img           
+            src="static/images/head.jpg"
             alt="Chia-Yang Huang"
             className="border border-secondary rounded-circle"
             width={avatarSize}
@@ -44,7 +41,6 @@ const About = () => {
                 >
                   <Icon
                     icon={social.icon}
-                    // size="2x"
                     height={32}
                     className="mx-2"
                     color={social.color}

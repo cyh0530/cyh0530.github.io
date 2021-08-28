@@ -13,7 +13,7 @@ const Education = () => {
         startDate="Sep 2018"
         endDate="Current"
         location="Seattle, WA"
-        logo={uwLogo}
+        logo="static/images/logo/uw.png"
         logoWidth={imageWidth}
         logoHeight={(imageWidth * 2) / 3}
         title="B.S. Computer Science"
