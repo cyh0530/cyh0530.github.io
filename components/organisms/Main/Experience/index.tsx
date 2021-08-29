@@ -53,6 +53,7 @@ const experiences = [
               ICONS.SASS,
               ICONS.TS,
               ICONS.REACT,
+              ICONS.REDUX,
               ICONS.NODE,
               ICONS.YARN,
               ICONS.NGINX,
@@ -113,7 +114,7 @@ const experiences = [
   {
     name: "Make A Thing",
     startDate: "May 2019",
-    endDate: "Jul 2019",
+    endDate: "Aug 2019",
     location: "West Lafayette",
     logo: "static/images/logo/make-a-thing.jpeg",
     logoWidth: 60,

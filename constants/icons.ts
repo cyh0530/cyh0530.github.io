@@ -29,6 +29,11 @@ const ICONS = {
     icon: "vscode-icons:file-type-reactjs",
     color: "rgb(97, 218, 251)",
   },
+  REDUX: {
+    name: "Redux",
+    icon: "logos:redux",
+    color: "rgb(118, 74, 188)",
+  },
   NODE: {
     name: "NodeJS",
     icon: "fa-brands:node",
