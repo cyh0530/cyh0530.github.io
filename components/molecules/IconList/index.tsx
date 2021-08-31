@@ -15,7 +15,7 @@ const renderTooltip = (props: any, name: string) => (
 const IconList = ({ icons, images = [] }: IProps) => {
 
   return (
-    <div className="">
+    <div className="d-flex">
       {icons.map((icon, index) => (
         <OverlayTrigger
           key={index}
@@ -23,12 +23,14 @@ const IconList = ({ icons, images = [] }: IProps) => {
           delay={{ show: 250, hide: 250 }}
           overlay={(props) => renderTooltip(props, icon.name)}
         >
-          <Icon
-            height={32}
-            className="mx-2 mb-2"
-            icon={icon.icon}
-            color={icon.color}
-          />
+          <div title={icon.name}>
+            <Icon
+              height={32}
+              className="mx-2 mb-2"
+              icon={icon.icon}
+              color={icon.color}
+            />
+          </div>
         </OverlayTrigger>
       ))}
       {images?.map((image, index) => (
@@ -38,7 +40,14 @@ const IconList = ({ icons, images = [] }: IProps) => {
           delay={{ show: 250, hide: 250 }}
           overlay={(props) => renderTooltip(props, image.name)}
         >
-          <img className="mx-2 mb-2" src={image.src} alt={image.name} height={32} />
+          <div title={image.name}>
+            <img
+              className="mx-2 mb-2"
+              src={image.src}
+              alt={image.name}
+              height={32}
+            />
+          </div>
         </OverlayTrigger>
       ))}
     </div>
