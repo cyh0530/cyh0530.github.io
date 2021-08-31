@@ -81,6 +81,11 @@ const ICONS = {
     icon: "logos:ant-design",
     color: "",
   },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    icon: "fa-brands:bootstrap",
+    color: "#7952b3",
+  },
   ID_CARD: {
     name: "Resume",
     icon: "fa-solid:id-card",

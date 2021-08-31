@@ -145,6 +145,7 @@ const experiences = [
               ICONS.JS,
               ICONS.REACT,
               ICONS.NODE,
+              ICONS.BOOTSTRAP,
               ICONS.MYSQL,
             ]}
           />
