@@ -15,7 +15,7 @@ const renderTooltip = (props: any, name: string) => (
 const IconList = ({ icons, images = [] }: IProps) => {
 
   return (
-    <div className="d-flex">
+    <div className="d-flex flex-wrap align-items-center">
       {icons.map((icon, index) => (
         <OverlayTrigger
           key={index}

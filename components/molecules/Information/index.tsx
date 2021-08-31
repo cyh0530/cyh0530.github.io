@@ -1,14 +1,14 @@
-import { ReactNode } from "react";
+import { ReactNode, useRef, useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import { useWindowSize } from "../../../hooks";
 interface IProps {
   name: string;
   startDate: string;
   endDate: string;
   location: string;
   logo?: string;
-  logoWidth?: number;
+  logoWidth: number;
   logoHeight?: number;
   title: string;
   description: ReactNode | string;
@@ -25,6 +25,18 @@ const Information = ({
   title,
   description,
 }: IProps) => {
+  const logoColRef = useRef<HTMLDivElement>(null);
+  const [logoDisplayWidth, setLogoDisplayWidth] = useState<any>(logoWidth);
+
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    if (logoColRef && logoColRef.current?.clientWidth && logoColRef.current?.clientWidth < logoWidth) {
+        setLogoDisplayWidth("100%");
+    } else {
+      setLogoDisplayWidth(logoWidth)
+    }
+  }, [width]);
 
   return (
     <Row className="py-4">
@@ -37,19 +49,12 @@ const Information = ({
             </h6>
             <h6>{location}</h6>
           </Col>
-          <Col xs={2}>
-            {logo && (
-              <img
-                src={logo}
-                alt="UW"
-                width={logoWidth}
-                height={logoHeight}
-              />
-            )}
+          <Col xs={3} md={2} ref={logoColRef} className="text-center">
+            {logo && <img src={logo} alt={name} width={logoDisplayWidth} />}
           </Col>
         </Row>
       </Col>
-      <Col xs={12} md={6} className="ps-4">
+      <Col xs={12} md={6} className="ps-md-4">
         <h5 className="font-weight-bold">{title}</h5>
         <p>{description}</p>
       </Col>

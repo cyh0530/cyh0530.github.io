@@ -46,7 +46,7 @@ const experiences = [
             certificate templates
           </li>
         </ul>
-        <div className="d-flex align-item-center ml-5 mb-4">
+        <div className="ml-5 mb-4">
           <IconList
             icons={[
               ICONS.HTML5,
@@ -93,7 +93,7 @@ const experiences = [
           </li>
         </ul>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={6} className="pb-4">
             <img
               src="static/images/experiences/tyapn-1.jpg"
               alt="TYAPN Officers"
@@ -137,7 +137,7 @@ const experiences = [
             <br />
           </li>
         </ul>
-        <div className="d-flex align-item-center ml-5 mb-4">
+        <div className="ml-5 mb-4">
           <IconList
             icons={[
               ICONS.HTML5,
@@ -151,7 +151,7 @@ const experiences = [
           />
         </div>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={6} className="pb-4">
             <img
               src="static/images/experiences/make-1.png"
               className="project-pic"
