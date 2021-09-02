@@ -59,6 +59,7 @@ const experiences = [
               ICONS.NGINX,
               ICONS.POSTGRE,
               ICONS.MONGO,
+              ICONS.GIT,
               ICONS.AZURE,
             ]}
           />

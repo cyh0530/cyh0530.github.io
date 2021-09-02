@@ -91,6 +91,11 @@ const ICONS = {
     icon: "fa-solid:id-card",
     color: "#4b2e83",
   },
+  GIT: {
+    name: "Git",
+    icon: "fa-brands:git-alt",
+    color: "#f34f29",
+  },
   GMAIL: {
     name: "Email",
     icon: "cib:gmail",
