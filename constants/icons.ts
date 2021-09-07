@@ -44,8 +44,10 @@ const ICONS = {
     icon: "fa-brands:yarn",
     color: "rgb(44, 142, 187)",
   },
+  C: { name: "C", icon: "vscode-icons:file-type-c2", color: "" },
   JAVA: { name: "Java", icon: "logos:java", color: "" },
   PYTHON: { name: "Python", icon: "vscode-icons:file-type-python", color: "" },
+  MATLAB: { name: "Matlab", icon: "vscode-icons:file-type-matlab", color: "" },
   AZURE: {
     name: "Azure",
     icon: "codicon:azure",

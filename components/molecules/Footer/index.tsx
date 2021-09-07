@@ -9,7 +9,11 @@ const Footer = () => {
         <p className="lead">
           I&apos;m currently looking for software engineering opportunities.{" "}
           <br />
-          Feel free to contact me if you have any position available
+          Feel free to{" "}
+          <a style={{ color: "#0d6efd" }} href="mailto: cyh0530@cs.uw.edu">
+            contact me
+          </a>{" "}
+          if you have any position available.
         </p>
         <p className="pt-2">
           {socialMedia.map((social, index) => (
