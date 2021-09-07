@@ -3,7 +3,7 @@ import ICONS from "./icons";
 const socialMedia = [
   {
     ...ICONS.ID_CARD,
-    link: "https://cyh0530.github.io/static/Resume%20(Chia-Yang%20Huang).pdf",
+    link: "https://docs.google.com/document/d/1hWYcCvMClgqB4DOh4nQ5No0QtJ1Cs04mnbLULWjcgko/edit?usp=sharing",
   },
   {
     ...ICONS.GMAIL,
