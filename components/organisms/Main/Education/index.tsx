@@ -36,7 +36,7 @@ const Education = () => {
                 </ul>
                 <div className="ml-5 mb-4">
                   <IconList
-                    icons={[ICONS.JAVA, ICONS.C, ICONS.PYTHON, ICONS.MATLAB]}
+                    icons={[ICONS.JAVA, ICONS.C, ICONS.PYTHON, ICONS.MATLAB, ICONS.BASH]}
                   />
                 </div>
               </>
