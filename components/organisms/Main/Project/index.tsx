@@ -41,7 +41,7 @@ const projects = [
       ICONS.TS,
       ICONS.REACT,
       ICONS.PYTHON,
-      ICONS.TENSORFLOW,
+      // ICONS.TENSORFLOW,
     ],
     images: [
       {
