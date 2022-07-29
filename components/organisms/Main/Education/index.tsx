@@ -25,14 +25,11 @@ const Education = () => {
                 <ul>
                   <li>Expected Graduation - Dec 2022 </li>
                   <li>
-                    Relevant Course - Java, Data Structure, Database, Matlab,
-                    Python
+                    Relevant Course - Java, C, Matlab, Data Structure, Database, Hardware / Software Interface,
+        Machine Learning, Natural Language Processing, Operating System, Networks, Security
+
                   </li>
-                  <li>Currently Taking - C, Security</li>
-                  <li>
-                    Planned Taking - Machine Learning, Algorithms, Networks,
-                    OS, NLP
-                  </li>
+                  <li>Currently Taking - Data Center, Deep Learning</li>
                 </ul>
                 <div className="ml-5 mb-4">
                   <IconList
