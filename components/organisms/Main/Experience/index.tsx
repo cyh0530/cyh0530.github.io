@@ -144,22 +144,6 @@ const experiences = [
                         experiences
                     </li>
                 </ul>
-                <Row>
-                    <Col xs={12} md={6} className="pb-4">
-                        <img
-                            src="static/images/experiences/tyapn-1.jpg"
-                            alt="TYAPN Officers"
-                            width="100%"
-                        />
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <img
-                            src="static/images/experiences/tyapn-2.jpg"
-                            alt="TYAPN's Event - Legend of the Swoosh"
-                            width="100%"
-                        />
-                    </Col>
-                </Row>
             </>
         ),
     },
