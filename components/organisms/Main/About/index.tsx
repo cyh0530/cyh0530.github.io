@@ -29,23 +29,20 @@ const About = () => {
             height={avatarSize}
           />
         </Col>
-        <Col lg={7} className="d-flex align-items-center">
-          <div>
-            <h2 className="display-4 text-center">Chia-Yang Huang</h2>
-            <h5 className="text-center mb-5">Seattle, WA</h5>
-            <p className="lead text-center">{SITE_DESC}</p>
-            <p className="text-center">
-              <Button variant="primary">
-                <a
-                  href={RESUME_LINK}
-                  title="Resume"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark"
-                >
-                  Resume
-                </a>
-              </Button>
+        <Col lg={7}>
+          <div className="text-center">
+            <h2 className="display-4">Chia-Yang Huang</h2>
+            <h5 className="mb-5">Seattle, WA</h5>
+            <p className="lead">{SITE_DESC}</p>
+            <div>
+              <a
+                href={RESUME_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark me-2 align-top"
+              >
+                <Button variant="primary">Resume</Button>
+              </a>
               {socialMedia.map((social, index) => (
                 <OverlayTrigger
                   key={index}
@@ -56,21 +53,20 @@ const About = () => {
                   <a
                     href={social.link}
                     key={index}
-                    title={social.name}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-dark"
                   >
                     <Icon
                       icon={social.icon}
-                      height={32}
+                      height={38}
                       className="mx-2 mb-4"
                       color={social.color}
                     />
                   </a>
                 </OverlayTrigger>
               ))}
-            </p>
+            </div>
           </div>
         </Col>
       </Row>

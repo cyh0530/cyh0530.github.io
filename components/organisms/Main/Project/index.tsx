@@ -53,7 +53,7 @@ const projects = [
   {
     title: "Husky Map",
     image: "static/images/projects/huskymap.png",
-    link: "https://huskymaps-cyh0530.herokuapp.com",
+    // link: "https://huskymaps-cyh0530.herokuapp.com",
     githubLink: "https://github.com/cyh0530/CSE373-Data-Structure",
     description: (
       <>

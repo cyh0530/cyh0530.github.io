@@ -26,7 +26,7 @@ const experiences = [
     endDate: "Present",
     location: "Seattle, WA",
     title: "Software Engineer I",
-    logo: "/static/images/logo/seekout-new.jpeg",
+    logo: "/static/images/logo/seekout-new.png",
     logoWidth: 60,
     logoHeight: 60,
     description: (

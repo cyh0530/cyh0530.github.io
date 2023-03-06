@@ -23,9 +23,9 @@ const Education = () => {
             description={
               <>
                 <ul>
-                  <li>Expected Graduation - Dec 2022 </li>
+                  <li>Sep 2018 - Dec 2022 </li>
                   <li>
-                    Relevant Course - Java, C, Matlab, Data Structure, Database, Hardware / Software Interface,
+                    Courses taken - Java, C, Matlab, Data Structure, Database, Hardware / Software Interface,
         Machine Learning, Natural Language Processing, Operating System, Networks, Security, Deep Learning
 
                   </li>

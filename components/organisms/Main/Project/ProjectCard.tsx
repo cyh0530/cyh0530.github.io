@@ -8,7 +8,7 @@ interface IProps {
   title: string;
   image: string;
   description: ReactNode;
-  link: string;
+  link?: string;
   githubLink: string;
   icons: { icon: string; name: string; color?: string }[];
   images?: { src: string; name: string }[];
