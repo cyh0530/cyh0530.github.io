@@ -22,10 +22,31 @@ const Experience = () => {
 const experiences = [
     {
         name: "SeekOut",
+    startDate: "Feb 2023",
+    endDate: "Present",
+    location: "Seattle, WA",
+    title: "Software Engineer I",
+    logo: "/static/images/logo/seekout-new.jpeg",
+    logoWidth: 60,
+    logoHeight: 60,
+    description: (
+      <>
+        <ul>
+        </ul>
+        <div className="ml-5 mb-4">
+          <IconList
+            icons={[ICONS.CSHARP, ICONS.PYTHON, ICONS.GIT, ICONS.AZURE]}
+          />
+        </div>
+      </>
+    ),
+  },
+  {
+    name: "SeekOut",
         startDate: "Jun 2022",
         endDate: "Sep 2022",
         location: "Seattle, WA",
-        title: "Backend Engineer",
+    title: "Software Engineer Intern",
         logo: "static/images/logo/seekout.png",
         logoWidth: 60,
         logoHeight: 60,
