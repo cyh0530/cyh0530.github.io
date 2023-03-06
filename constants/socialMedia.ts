@@ -1,9 +1,10 @@
+import { EMAIL } from ".";
 import ICONS from "./icons";
 
 const socialMedia = [
   {
     ...ICONS.GMAIL,
-    link: "mailto:cyh0530@uw.edu",
+    link: `mailto:${EMAIL}`,
   },
   {
     ...ICONS.LINKEDIN,

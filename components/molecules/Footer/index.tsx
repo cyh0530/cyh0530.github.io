@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import Section from "../Section";
 import socialMedia from "@constants/socialMedia";
+import { EMAIL } from "@constants/index";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           I&apos;m currently looking for software engineering opportunities.{" "}
           <br />
           Feel free to{" "}
-          <a style={{ color: "#0d6efd" }} href="mailto: cyh0530@cs.uw.edu">
+          <a style={{ color: "#0d6efd" }} href={`mailto:${EMAIL}`}>
             contact me
           </a>{" "}
           if you have any position available.

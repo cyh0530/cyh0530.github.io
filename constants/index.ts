@@ -4,6 +4,7 @@ export const SITE_DESC =
   "I'm Chia-Yang (Justin) Huang. I'm a software engineer at SeekOut. I graduated from University of Washington in December 2022 studying computer science.";
 export const FAVICON = "favicon.ico";
 
+export const EMAIL = "chiayanghuang0@gmail.com";
 export const RESUME_LINK =
   "https://docs.google.com/document/d/1hWYcCvMClgqB4DOh4nQ5No0QtJ1Cs04mnbLULWjcgko/edit?usp=sharing";
 
