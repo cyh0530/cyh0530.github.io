@@ -49,7 +49,7 @@ const ICONS = {
   JAVA: { name: "Java", icon: "logos:java", color: "" },
   PYTHON: { name: "Python", icon: "vscode-icons:file-type-python", color: "" },
   MATLAB: { name: "Matlab", icon: "vscode-icons:file-type-matlab", color: "" },
-  BASH: {name: "Bash", icon: "logos:bash-icon", color: ""},
+  BASH: { name: "Bash", icon: "logos:bash-icon", color: "" },
   AZURE: {
     name: "Azure",
     icon: "codicon:azure",
@@ -124,6 +124,11 @@ const ICONS = {
     name: "Instagram",
     icon: "fa-brands:instagram",
     color: "#e4405f",
+  },
+  PYTORCH: {
+    name: "PyTorch",
+    icon: "logos:pytorch-icon",
+    color: "",
   },
 };
 
