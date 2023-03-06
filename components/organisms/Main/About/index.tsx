@@ -1,11 +1,8 @@
 import { useMemo } from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import { Button, Row, Col, Tooltip, OverlayTrigger } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import Section from "../../../molecules/Section";
-import { SITE_DESC } from "@constants/index";
+import { RESUME_LINK, SITE_DESC } from "@constants/index";
 import socialMedia from "@constants/socialMedia";
 
 const renderTooltip = (props: any, name: string) => (
