@@ -41,6 +41,7 @@ const projects = [
       ICONS.TS,
       ICONS.REACT,
       ICONS.PYTHON,
+      ICONS.PYTORCH
     ],
     images: [
       {
