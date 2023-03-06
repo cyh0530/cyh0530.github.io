@@ -38,6 +38,17 @@ const About = () => {
             <h5 className="text-center mb-5">Seattle, WA</h5>
             <p className="lead text-center">{SITE_DESC}</p>
             <p className="text-center">
+              <Button variant="primary">
+                <a
+                  href={RESUME_LINK}
+                  title="Resume"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark"
+                >
+                  Resume
+                </a>
+              </Button>
               {socialMedia.map((social, index) => (
                 <OverlayTrigger
                   key={index}

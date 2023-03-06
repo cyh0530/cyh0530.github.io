@@ -1,8 +1,11 @@
 export const TITLE = "Chia-Yang Huang";
-export const SITE_URL = (process.env.SITE_URL = "https://cyh0530.github.io");
+export const SITE_URL = (process.env.SITE_URL = "https://cyh0530.info");
 export const SITE_DESC =
-  "My name is Chia-Yang Huang, or you can call Justin. I am a computer science student in University of Washington planning to graduate in December 2022.";
+  "I'm Chia-Yang (Justin) Huang. I'm a software engineer at SeekOut. I graduated from University of Washington in December 2022 studying computer science.";
 export const FAVICON = "favicon.ico";
+
+export const RESUME_LINK =
+  "https://docs.google.com/document/d/1hWYcCvMClgqB4DOh4nQ5No0QtJ1Cs04mnbLULWjcgko/edit?usp=sharing";
 
 export const LINKS = ["Education", "Experience", "Project", "Contact"];
 
