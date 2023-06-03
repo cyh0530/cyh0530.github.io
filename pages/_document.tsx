@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-N6TYPX5L3Y"
           ></Script>
-          <Script>
+          <Script id="ga">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
