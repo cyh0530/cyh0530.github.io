@@ -46,5 +46,8 @@ module.exports = withImage({
   webpack(config, options) {
     return config;
   },
+  images: {
+        unoptimized: true
+  },
   ...nextConfig,
 });
