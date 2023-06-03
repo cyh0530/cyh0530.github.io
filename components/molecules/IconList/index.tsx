@@ -48,7 +48,6 @@ const IconList = ({ icons, images = [] }: IProps) => {
               src={image.src}
               alt={image.name}
               height={32}
-              width={32}
             />
           </div>
         </OverlayTrigger>

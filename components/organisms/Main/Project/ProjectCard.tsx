@@ -23,36 +23,43 @@ const ProjectCard = ({
   icons,
   images = [],
 }: IProps) => {
-  return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-body"
-    >
-      <Card className="shadow-lg p-3 rounded mb-5 bg-white">
-        <Card.Img variant="top" src={image} className="rounded" alt={title} />
-        <Card.Body>
-          <Card.Title className="">{title}</Card.Title>
-          <Card.Text style={{ minHeight: 100 }}>{description}</Card.Text>
-        </Card.Body>
-        <Card.Footer className="bg-transparent border-0">
-          <IconList icons={icons} images={images} />
-          <a
-            href={githubLink}
-            className="position-absolute"
-            style={{ right: 20, bottom: 23 }}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={title}
-            onClick={(e) => e.stopPropagation}
-          >
-            <Icon icon={ICONS.GITHUB.icon} height={32} />
-          </a>
-        </Card.Footer>
-      </Card>
-    </a>
+  const card = (
+    <Card className="shadow-lg p-3 rounded mb-5 bg-white">
+      <Card.Img variant="top" src={image} className="rounded" alt={title} />
+      <Card.Body>
+        <Card.Title className="">{title}</Card.Title>
+        <Card.Text style={{ minHeight: 100 }}>{description}</Card.Text>
+      </Card.Body>
+      <Card.Footer className="bg-transparent border-0">
+        <IconList icons={icons} images={images} />
+        <a
+          href={githubLink}
+          className="position-absolute"
+          style={{ right: 20, bottom: 23 }}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={title}
+          onClick={(e) => e.stopPropagation}
+        >
+          <Icon icon={ICONS.GITHUB.icon} height={32} />
+        </a>
+      </Card.Footer>
+    </Card>
   );
+  if (!!link) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-body"
+      >
+        {card}
+      </a>
+    );
+  } else {
+    return card;
+  }
 };
 
 export default ProjectCard;
