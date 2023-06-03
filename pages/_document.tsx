@@ -4,7 +4,7 @@ import { FAVICON, SITE_DESC } from "../constants";
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link rel="icon" type="image/x-icon" href={FAVICON} />
           <link

@@ -31,7 +31,7 @@ const ProjectCard = ({
       className="text-body"
     >
       <Card className="shadow-lg p-3 rounded mb-5 bg-white">
-        <Card.Img variant="top" src={image} className="rounded"  />
+        <Card.Img variant="top" src={image} className="rounded" alt={title} />
         <Card.Body>
           <Card.Title className="">{title}</Card.Title>
           <Card.Text style={{ minHeight: 100 }}>{description}</Card.Text>
@@ -44,6 +44,7 @@ const ProjectCard = ({
             style={{ right: 20, bottom: 23 }}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={title}
             onClick={(e) => e.stopPropagation}
           >
             <Icon icon={ICONS.GITHUB.icon} height={32} />

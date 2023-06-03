@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Image from 'next/image';
+
 interface IProps {
   icons: { icon: string; name: string; color?: string }[];
   images?: { src: string; name: string }[];
@@ -41,11 +43,12 @@ const IconList = ({ icons, images = [] }: IProps) => {
           overlay={(props) => renderTooltip(props, image.name)}
         >
           <div title={image.name}>
-            <img
+            <Image
               className="mx-2 mb-2"
               src={image.src}
               alt={image.name}
               height={32}
+              width={32}
             />
           </div>
         </OverlayTrigger>

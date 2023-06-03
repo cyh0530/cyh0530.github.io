@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Button, Row, Col, Tooltip, OverlayTrigger } from "react-bootstrap";
 import { Icon } from "@iconify/react";
+import Image from 'next/image';
 import Section from "../../../molecules/Section";
 import { RESUME_LINK, SITE_DESC } from "@constants/index";
 import socialMedia from "@constants/socialMedia";
@@ -21,7 +22,7 @@ const About = () => {
           lg={5}
           className="d-none d-lg-flex align-self-center justify-content-center"
         >
-          <img
+          <Image
             src="static/images/head.jpg"
             alt="Chia-Yang Huang"
             className="border border-secondary rounded-circle"
@@ -40,6 +41,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-dark me-2 align-top"
+                aria-label="Resume"
               >
                 <Button variant="primary">Resume</Button>
               </a>
@@ -56,6 +58,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-dark"
+                    aria-label={social.name}
                   >
                     <Icon
                       icon={social.icon}
