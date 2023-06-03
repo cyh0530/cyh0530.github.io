@@ -46,5 +46,5 @@ module.exports = withImage({
   webpack(config, options) {
     return config;
   },
-  nextConfig,
+  ...nextConfig,
 });
