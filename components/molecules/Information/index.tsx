@@ -36,7 +36,7 @@ const Information = ({
     } else {
       setLogoDisplayWidth(logoWidth)
     }
-  }, [width]);
+  }, [width, logoWidth]);
 
   return (
     <Row className="py-4">

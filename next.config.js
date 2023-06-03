@@ -5,7 +5,7 @@ const withImage = require("next-images");
 const imageCacheControl =
   "public, max-age=86400, s-maxage=86400, stale-while-revalidate=2592000";
 
-module.exports = {
+const nextConfig = {
   async headers() {
     return [
       {
@@ -37,12 +37,14 @@ module.exports = {
       },
     ];
   },
-  ...withImage({
-    reactStrictMode: true,
-    esModule: true,
-    fileExtensions: ["jpg", "jpeg", "png", "gif"],
-    webpack(config, options) {
-      return config;
-    },
-  }),
 };
+
+module.exports = withImage({
+  reactStrictMode: true,
+  esModule: true,
+  fileExtensions: ["jpg", "jpeg", "png", "gif"],
+  webpack(config, options) {
+    return config;
+  },
+  nextConfig,
+});
