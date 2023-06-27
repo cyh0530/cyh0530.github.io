@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
           />
-          <meta property="description" content={SITE_DESC} />
+          <meta name="description" content={SITE_DESC} />
           <Script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-N6TYPX5L3Y"
