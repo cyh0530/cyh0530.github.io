@@ -2,13 +2,13 @@ import { SITE_DESC } from "./constants";
 
 export default {
   openGraph: {
-    url: "https://cyh0530.github.io/",
+    url: "https://cyh0530.info/",
     type: "website",
     title: "Chia-Yang Huang",
     description: SITE_DESC,
     images: [
       {
-        url: "https://cyh0530.github.io/static/images/banner.jpg",
+        url: "https://cyh0530.info/static/images/banner.jpg",
         alt: "Chia-Yang Huang",
       },
     ],

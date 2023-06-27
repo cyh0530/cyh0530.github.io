@@ -3,6 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProjectCard from "./ProjectCard";
 import ICONS from "@constants/icons";
+import appScript from '/public/static/images/logo/app-scripts.svg'
+import uwLogo from '/public/static/images/logo/uw.png'
 
 const Project = () => {
   return (
@@ -44,7 +46,7 @@ const projects = [
     ],
     images: [
       {
-        src: "static/images/logo/app-scripts.svg",
+        src: appScript,
         name: "Google App Script",
       },
     ],
@@ -71,7 +73,7 @@ const projects = [
     icons: [ICONS.JAVA],
     images: [
       {
-        src: "static/images/logo/uw.png",
+        src: uwLogo,
         name: "UW CSE 373 Data Structure Course Project",
       },
     ],

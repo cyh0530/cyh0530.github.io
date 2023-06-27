@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Section from "../../../molecules/Section";
 import { RESUME_LINK, SITE_DESC } from "@constants/index";
 import socialMedia from "@constants/socialMedia";
+import head from '/public/static/images/head.jpg'
 
 const renderTooltip = (props: any, name: string) => (
   <Tooltip id={name} {...props}>
@@ -23,7 +24,7 @@ const About = () => {
           className="d-none d-lg-flex align-self-center justify-content-center"
         >
           <Image
-            src="static/images/head.jpg"
+            src={head}
             alt="Chia-Yang Huang"
             className="border border-secondary rounded-circle"
             width={avatarSize}

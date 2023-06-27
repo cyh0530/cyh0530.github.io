@@ -2,6 +2,7 @@ import { ReactNode, useRef, useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useWindowSize } from "../../../hooks";
+
 interface IProps {
   name: string;
   startDate: string;
@@ -56,7 +57,7 @@ const Information = ({
       </Col>
       <Col xs={12} md={6} className="ps-md-4">
         <h5 className="font-weight-bold">{title}</h5>
-        <p>{description}</p>
+        <div>{description}</div>
       </Col>
     </Row>
   );

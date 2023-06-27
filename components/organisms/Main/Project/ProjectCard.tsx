@@ -1,8 +1,9 @@
 import IconList from "@components/molecules/IconList";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 import Card from "react-bootstrap/Card";
 import { Icon } from "@iconify/react";
 import ICONS from "@constants/icons";
+import { StaticImageData } from "next/image";
 
 interface IProps {
   title: string;
@@ -11,7 +12,7 @@ interface IProps {
   link?: string;
   githubLink: string;
   icons: { icon: string; name: string; color?: string }[];
-  images?: { src: string; name: string }[];
+  images?: { src: string | StaticImageData; name: string }[];
 }
 
 const ProjectCard = ({
@@ -23,14 +24,27 @@ const ProjectCard = ({
   icons,
   images = [],
 }: IProps) => {
+  const anchorRef = useRef<HTMLAnchorElement>(null);
+  const handleOnClick = () => {
+    anchorRef.current?.click();
+  };
   const card = (
-    <Card className="shadow-lg p-3 rounded mb-5 bg-white">
-      <Card.Img variant="top" src={image} className="rounded" alt={title} />
-      <Card.Body>
-        <Card.Title className="">{title}</Card.Title>
-        <Card.Text style={{ minHeight: 100 }}>{description}</Card.Text>
+    <Card
+      className="shadow-lg p-3 rounded mb-5 bg-white"
+      style={{ cursor: link ? "pointer" : "default" }}
+    >
+      <Card.Img
+        variant="top"
+        src={image}
+        className="rounded"
+        alt={title}
+        onClick={handleOnClick}
+      />
+      <Card.Body onClick={handleOnClick}>
+        <Card.Title>{title}</Card.Title>
+        <span style={{ minHeight: 100 }}>{description}</span>
       </Card.Body>
-      <Card.Footer className="bg-transparent border-0">
+      <Card.Footer className="bg-transparent border-0" onClick={handleOnClick}>
         <IconList icons={icons} images={images} />
         <a
           href={githubLink}
@@ -46,20 +60,22 @@ const ProjectCard = ({
       </Card.Footer>
     </Card>
   );
-  if (!!link) {
-    return (
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-body"
-      >
-        {card}
-      </a>
-    );
-  } else {
-    return card;
-  }
+
+  return (
+    <>
+      {!!link && (
+        <a
+          ref={anchorRef}
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-body"
+        />
+      )}
+
+      {card}
+    </>
+  );
 };
 
 export default ProjectCard;

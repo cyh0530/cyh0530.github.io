@@ -1,11 +1,11 @@
 import { Icon } from "@iconify/react";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Image from 'next/image';
+import Image, { StaticImageData } from "next/image";
 
 interface IProps {
   icons: { icon: string; name: string; color?: string }[];
-  images?: { src: string; name: string }[];
+  images?: { src: StaticImageData | string; name: string }[];
 }
 
 const renderTooltip = (props: any, name: string) => (
@@ -15,7 +15,6 @@ const renderTooltip = (props: any, name: string) => (
 );
 
 const IconList = ({ icons, images = [] }: IProps) => {
-
   return (
     <div className="d-flex flex-wrap align-items-center">
       {icons.map((icon, index) => (
