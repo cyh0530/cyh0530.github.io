@@ -34,7 +34,13 @@ const experiences = [
         <ul></ul>
         <div className="ml-5 mb-4">
           <IconList
-            icons={[ICONS.CSHARP, ICONS.PYTHON, ICONS.GIT, ICONS.AZURE]}
+            icons={[
+              ICONS.CSHARP,
+              ICONS.REACT,
+              ICONS.GIT,
+              ICONS.AZURE,
+              ICONS.CHATGPT,
+            ]}
           />
         </div>
       </>
@@ -74,7 +80,14 @@ const experiences = [
         </ul>
         <div className="ml-5 mb-4">
           <IconList
-            icons={[ICONS.CSHARP, ICONS.PYTHON, ICONS.GIT, ICONS.AZURE]}
+            icons={[
+              ICONS.CSHARP,
+              ICONS.REACT,
+              ICONS.GIT,
+              ICONS.AZURE,
+              ICONS.SNOWFLAKE,
+              ICONS.CHATGPT,
+            ]}
           />
         </div>
       </>

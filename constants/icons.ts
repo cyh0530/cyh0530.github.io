@@ -55,6 +55,11 @@ const ICONS = {
     icon: "codicon:azure",
     color: "rgb(0, 137, 214)",
   },
+  CHATGPT: {
+    name: "GPT",
+    icon: "arcticons:openai-chatgpt",
+    color: "black",
+  },
   POSTGRE: {
     name: "PostgreSQL",
     icon: "cib:postgresql",
@@ -94,6 +99,11 @@ const ICONS = {
     name: "Resume",
     icon: "fa-solid:id-card",
     color: "#4b2e83",
+  },
+  SNOWFLAKE: {
+    name: "Snowflake",
+    icon: "logos:snowflake-icon",
+    color: "#29b5e8",
   },
   GIT: {
     name: "Git",
